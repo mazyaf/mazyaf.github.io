@@ -457,6 +457,9 @@ main#home h1 {
   .boxes div {
     font-size: 1.2rem;
   }
+  h1.lg-heading {
+    font-size: 5rem;
+  }
   .projects {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
