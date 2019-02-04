@@ -452,7 +452,10 @@ main#home h1 {
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh;
-    font-size: 3rem;
+    font-size: 3.5rem;
+  }
+  .boxes div {
+    font-size: 1.2rem;
   }
   .projects {
     -ms-grid-columns: 1fr;
