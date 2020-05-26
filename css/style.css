@@ -65,6 +65,12 @@ li{
         display: inline;
         font-size: 1em ;
     }
+    .right{
+        flex: 3;
+    }
+    .nav{
+        margin-top: 60px;
+    }
 
 }
 
