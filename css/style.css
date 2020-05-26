@@ -1,92 +1,74 @@
-*{
-    padding: 0;
-}
 body{
-    background-color: #222222;
     color: #FAFAFA;  
     font-family: 'Brandon Grotesque', sans-serif;
-    font-weight: 500;
     font-style: italic;
-    text-align: center;
+    font-weight: 500;
+    background-color: #222222;
 }
-div.nav >ul{
-    margin-top: 200px;
-    
+a{
+    text-decoration: none;
+    color: #FAFAFA;
 }
-
-li{
-    list-style: none;
-    display:inline;
-    padding: 10px;
-    font-size: 1.5em;
-}
-
-li > a{
-    margin: 0px 0px 0px  0px;
-    display: inline;
-    font-size: 6em;
-    padding: 0 60px;
-    line-height: 160px;
-    transition: all 500ms ease-in;
-    
-}
-.footer{
-    display: inline;
-}
-ul{
-    padding: 0;
-}
-
-div{
-    display: inline;
-    padding: 0;
-}
-
-.left{
-    display: inline;
-    padding: 10px;
-}
-.right{
-    display: inline;
-    
-}
-
-
-li>i:hover{
-    color:crimson
-}
-li>a:hover{
+a:hover{
     color: crimson;
 }
 
 
-@media screen and (max-width: 700px) {
-    li > a{
-        font-size: 5em; 
-        line-height: 135px;
+li{
+    list-style: none; 
+}
+.nav{
+    margin-top: 160px;
+}
+
+.nav > ul > li > a{
+    font-size: 6em;
+}
+.container{
+    display: block;
+    width: 90%;
+    /* background-color: aqua; */
+    margin: auto;
+}
+
+.list{
+   
+    justify-content: space-around;
     
+}
+
+
+.list, .footer{
+    display: flex;
+}
+.left{
+    flex: 3;
+    /* background-color: red; */
+}
+.right{
+    font-size: 1.5em;
+    flex: 1;
+    /* background-color: green; */
+}
+
+.footer{
+    margin-top: 200px;
+}
+
+
+@media screen and (max-width: 1080px) {
+
+    .container{
+        text-align: center;
+    }
+    .nav > ul, .footer{
+        display: inline;
+        font-size: 3em ;
     }
 
-    div.nav >ul{
-        margin-top: 20px;
-        
-    }
-  }
+}
 
-@media screen and (max-width: 600px) {
-    li > a{
-        font-size: 4em; 
-        line-height: 130px;
-    
-    }
-  }
-  
 
-@media screen and (max-width: 500px) {
-    li > a{
-        font-size: 4em; 
-        line-height: 130px;
-    
-    }
-  }
-  
+
+
+
