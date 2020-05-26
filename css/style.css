@@ -65,12 +65,22 @@ li{
         display: inline;
         font-size: 1em ;
     }
+    .left{
+        flex: 1;
+
+    }
     .right{
-        flex: 3;
+        flex: 1;
     }
     .nav{
-        margin-top: 60px;
+        margin-top: 50px;
     }
+    .footer{
+        margin-top: 300px;
+    }
+
+    
+    
 
 }
 
