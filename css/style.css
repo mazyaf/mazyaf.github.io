@@ -31,16 +31,18 @@ li{
     margin: auto;
 }
 
-.list{
-   
-    justify-content: space-around;
+.list, .list-social{    
+    justify-content: space-evenly;
     
 }
 
 
-.list, .footer{
+
+
+.list, .footer, .list-social{
     display: flex;
 }
+
 .left{
     flex: 3;
     /* background-color: red; */
@@ -70,13 +72,29 @@ li{
 
     }
     .right{
-        flex: 1;
+        display: block;
+        margin: auto;
     }
+
     .nav{
         margin-top: 50px;
     }
     .footer{
-        margin-top: 300px;
+        display: block;
+        margin-top: 50px;
+    }
+    .right{
+        display: block;
+    }
+  
+    .list-social{
+        display: flex;
+        margin-right: 40px;
+        margin-top: 30px;
+    }
+
+    .list-social > li {
+       flex: 1;
     }
 
     
