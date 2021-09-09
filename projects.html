@@ -27,6 +27,100 @@
         .card-title{
         color: #20c997;
         }
+
+        .wrapper{
+          /* background: red; */
+          margin: 100px auto;
+          max-width: 1100px;
+        }
+
+        .wrapper nav{
+
+          display: flex;
+          justify-content: center;
+        }
+
+        nav .items {
+          display: flex;
+          max-width: 720px;
+          width: 100%;
+          justify-content: space-between;
+          /* background: blue; */
+        }
+
+        nav .items .item{
+          padding: 7px 25px;
+          font-size: 18px;
+          font-weight: 500;
+          border: 2px solid #20c997;
+          border-radius: 10px;
+          cursor:pointer;
+          transition: all 0.3s ease;
+        } 
+        nav .items .active,
+        nav .items .item:hover{
+         color:#222222;
+         background: #20c997;
+        } 
+
+        .gallery{
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 30px;
+        }
+
+        .gallery .image{
+          padding: 7px;
+          width: calc(100% / 4);
+        }
+        .gallery .image span{
+          display: flex;
+          width: 100%;
+          overflow: hidden;
+        }
+
+        .gallery .image img{
+          width: 100%;
+          vertical-align: middle;
+          transition: all 0.3s ease;
+        }
+
+        .gallery .image:hover img{
+          transform: scale(1.1);
+        }
+
+       
+        @media (max-width:1000px){
+          .gallery .image{
+            width: calc(100% / 3);
+            
+          }
+          /* body{
+            background-color: rgb(9, 207, 207);
+          } */
+        } 
+
+
+        @media (max-width:800px){
+          .gallery .image{
+            width: calc(100% / 2);
+            
+          }
+          /* body{
+            background-color: rgb(9, 207, 207);
+          } */
+        } 
+
+        
+
+        .card:hover{
+          transition: all 0.1s ease;
+        }
+        .card:hover{
+          transform: scale(1.1);
+        }
+
+
     </style>
 </head>
 <body>
@@ -57,7 +151,7 @@
                     <img src="img/project2.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">ChatCat</h5>
-                      <p class="card-text">A Multiroom Realtime NodeJs Chat Server uses MongoDb-as-a-service through Mlab.com deployed on cloud with Heroku</p>
+                      <p class="card-text">A Multiroom Realtime Chat Server Build using NodeJs and Express, uses MongoDb-as-a-service through Mlab.com deployed on cloud with Heroku</p>
                       <a href="https://mazychatcat.herokuapp.com/" class="btn btn-primary">See demo</a>
                     </div>
                   </div>
@@ -107,6 +201,33 @@
             </div>
           </div> -->
 
+        </div>
+
+        <div class="row">
+          <h1 class="text-center p-5 mt-5 ">Gallery</h1c>
+          <div class="wrapper">
+            
+            <nav>
+              <div class="items">
+                <span class="item active">All</span>
+                <span class="item">Ecom</span>
+                <span class="item">ChatCat </span>
+                <span class="item">NBA website</span>
+                <span class="item">ArtistDb</span>
+              </div>
+            </nav>
+
+            <div class="gallery">
+              <div class="image"><span><img src=" img/nba1.png" alt=""></span></div>
+              <div class="image"><span><img src=" img/nba2.png" alt=""></span></div>
+              <div class="image"><span><img src=" img/nba3.png" alt=""></span></div>
+              <div class="image"><span><img src=" img/nba-m1.png" alt=""></span></div>
+              <div class="image"><span><img src=" img/nba-m2.png" alt=""></span></div>
+              <div class="image"><span><img src=" img/artistdb1.png" alt=""></span></div>
+              <div class="image"><span><img src=" img/artistdb2.png" alt=""></span></div>
+              <div class="image"><span><img src=" img/artistdb-m1.png" alt=""></span></div>
+            </div>
+          </div>
         </div>
           
     </div>
