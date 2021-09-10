@@ -33,6 +33,7 @@
 
         .wrapper{
           /* background: red; */
+          
           margin: 100px auto;
           max-width: 1100px;
         }
@@ -68,37 +69,126 @@
         } 
 
         .gallery{
-          display: flex;
+          /* display: flex;
           flex-wrap: wrap;
-          margin-top: 30px;
+          margin-top: 30px; */
+
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          grid-auto-rows: 100px 300px;
+          grid-gap: 10px;
+          grid-auto-flow: dense;
         }
 
         .gallery .image{
-          padding: 7px;
-          width: calc(100% / 4);
+          /* padding: 7px;
+          width: calc(100% / 4); */
+
+          width: 100%;
+          height: 100%;
+          position: relative;
+
         }
         .gallery .image span{
-          display: flex;
+          /* display: flex;
           width: 100%;
+          overflow: hidden; */
+
+          width: 100%;
+          height: 100%;
           overflow: hidden;
         }
 
         .gallery .image img{
-          width: 100%;
+          /* width: 100%;
           vertical-align: middle;
-          transition: all 0.3s ease;
+          transition: all 0.3s ease; */
+
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: 50% 0%;
+          cursor: pointer;
+          transition: .5s ease-in-out;
         }
 
         .gallery .image:hover img{
+          transform: scale(1.01);
+        }
+
+     
+        /* grid-width */
+
+        .w-1{
+          grid-column: span 1;
+        }
+
+
+        .w-2{
+          grid-column: span 2;
+        }
+
+
+        .w-3{
+          grid-column: span 3;
+        }
+
+
+        .w-4{
+          grid-column: span 4;
+        }
+
+
+        .w-5{
+          grid-column: span 5;
+        }
+
+
+        .w-6{
+          grid-column: span 6;
+        }
+
+        /* grip-height */
+
+        .h-1{
+          grid-row: span 1;
+        }
+
+        .h-2{
+          grid-row: span 2;
+        }
+        
+        .h-3{
+          grid-row: span 3;
+        }
+
+        .h-4{
+          grid-row: span 4;
+        }
+
+        .h-5{
+          grid-row: span 5;
+        }
+
+        .h-6{
+          grid-row: span 6;
+        }
+
+        .card:hover{
+          transition: all 0.1s ease;
+        }
+        .card:hover{
           transform: scale(1.1);
         }
 
-       
+
+
+          
         @media (max-width:1000px){
-          .gallery .image{
+          /* .gallery .image{
             width: calc(100% / 3);
             
-          }
+          } */
           /* body{
             background-color: rgb(9, 207, 207);
           } */
@@ -106,7 +196,7 @@
 
 
         @media (max-width:800px){
-          .gallery .image{
+          /* .gallery .image{
             width: calc(100% / 2);
             
           }
@@ -116,19 +206,10 @@
           font-size: 13px;
           font-weight: 400;
           overflow: hidden;
-        } 
+        }  */
           /* body{
             background-color: rgb(9, 207, 207);
           } */
-        } 
-
-        
-
-        .card:hover{
-          transition: all 0.1s ease;
-        }
-        .card:hover{
-          transform: scale(1.1);
         }
 
 
@@ -218,7 +299,7 @@
           <h1 class="text-center p-5 mt-5 ">Gallery</h1c>
           <div class="wrapper">
             
-            <nav>
+            <nav class="mb-5">
               <div class="items">
                 <span class="item active">All</span>
                 <span class="item">Ecom</span>
@@ -229,14 +310,14 @@
             </nav>
 
             <div class="gallery" id="gallery">
-              <div class="image"><span><img src=" img/nba1.png" alt=""></span></div>
-              <div class="image"><span><img src=" img/nba2.png" alt=""></span></div>
-              <div class="image"><span><img src=" img/nba3.png" alt=""></span></div>
-              <div class="image"><span><img src=" img/nba-m1.png" alt=""></span></div>
-              <div class="image"><span><img src=" img/nba-m2.png" alt=""></span></div>
-              <div class="image"><span><img src=" img/artistdb1.png" alt=""></span></div>
-              <div class="image"><span><img src=" img/artistdb2.png" alt=""></span></div>
-              <div class="image"><span><img src=" img/artistdb-m1.png" alt=""></span></div>
+              <div class="image h-2 w-3"><span><img src=" img/nba1.png" alt=""></span></div>
+              <div class="image h-4 w-3"><span><img src=" img/nba2.png" alt=""></span></div>
+              <div class="image h-2 w-3"><span><img src=" img/nba3.png" alt=""></span></div>
+              <div class="image h-3 w-2"><span><img src=" img/nba-m1.png" alt=""></span></div>
+              <div class="image h-3 w-2"><span><img src=" img/nba-m2.png" alt=""></span></div>
+              <div class="image h-3 w-2"><span><img src=" img/artistdb1.png" alt=""></span></div>
+              <div class="image h-3 w-3"><span><img src=" img/artistdb2.png" alt=""></span></div>
+              <div class="image h-3 w-3"><span><img src=" img/artistdb-m1.png" alt=""></span></div>
             </div>
           </div>
         </div>
